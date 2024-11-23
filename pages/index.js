@@ -1,7 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Loader from '../components/Loader'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import Loader from '../components/Loader';
+import toast from 'react-hot-toast';
 
 export default function Home() {
   return (
@@ -12,8 +13,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
       <h1>Home</h1>
       <Loader show ></Loader>
+      <div>
+        <button onClick={() => toast.success('hello')}></button>
+
+      </div>
+
 
     </div>
   )
